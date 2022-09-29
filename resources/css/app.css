@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn-primary{
+        @apply inline-flex py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 mx-6;
+    }
+
+    .btn-danger{
+        @apply inline-flex py-2 px-4 bg-red-500 text-white font-semibold rounded-md shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75
+    }
+
+    .btn-success{
+        @apply inline-flex py-2 px-4 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75
+    }
+
+    .btn-info{
+        @apply inline-flex py-2 px-4 bg-amber-500 text-white font-semibold rounded-md shadow-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-75
+    }
+
+    .alert-danger{
+        @apply bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4;
+    }
+
+    .alert-success{
+        @apply bg-teal-200 border-l-4 border-teal-500 text-teal-700 p-4;
+    }
+
+    table {
+        @apply w-full text-sm text-left text-gray-500 dark:text-gray-400;
+    }
+    table > thead{
+        @apply text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400;
+    }
+    tbody > tr > td{
+        @apply py-4 px-6;
+    }
+    table > thead > th {
+        @apply py-3 px-6;
+    }
+}
+
